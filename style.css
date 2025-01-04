@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Jaini+Purva&display=swap");
+
+:root {
+  --primary-color: #211106;
+  --secondary-color: #100c07;
+  --text-color: #a45f2c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.8rem;
+  background-color: var(--primary-color);
+  color: #fff;
+  font-family: "Jaini Purva", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* -------------- Header Section ----------- */
+.header {
+  width: 65%;
+  height: 95vh;
+  margin: auto;
+}
+.navigation {
+  height: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  height: 40px;
+}
+.logo img {
+  max-height: 100%;
+}
+
+.navigation ul {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navigation ul li {
+  list-style-type: none;
+}
+.navigation ul li a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+.header__contents {
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-texts {
+  width: 50%;
+  padding: 3rem;
+  height: 100%;
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  flex-direction: column;
+}
+.header-texts h1 {
+  font-size: 5.8rem;
+}
+.header-texts p {
+  font-size: 3rem;
+}
+.button {
+  background-color: var(--text-color);
+  color: var(--secondary-color);
+  margin-top: 3rem;
+  text-decoration: none;
+  display: block;
+  border: none;
+  padding: 1rem 2.5rem;
+  align-self: start;
+  border-radius: 6px;
+}
+
+.hero-image {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image img {
+  max-width: 80%;
+  border-radius: 8px;
+}
+
+/* -------- Products Section -------- */
+.products {
+  background-color: var(--secondary-color);
+  padding: 8rem 0;
+}
+.margin-wrapper {
+  width: 65%;
+  margin: auto;
+}
+
+h2 {
+  font-size: 4rem;
+  text-align: center;
+}
+.items {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 4rem;
+}
+.item {
+  flex: 0 0 23%;
+  text-align: center;
+  font-size: 2rem;
+}
+.item img {
+  max-width: 90%;
+  border-radius: 6px;
+}
+
+.item button {
+  background-color: #fff;
+  color: var(--secondary-color);
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 3px;
+  text-transform: capitalize;
+  margin-top: 0.5rem;
+  font-family: inherit;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* -------- Customer Review ---------- */
+.customer-review {
+  position: relative;
+  overflow: hidden;
+  height: 30rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+}
+.customer-review img {
+  position: absolute;
+  width: 100%;
+  z-index: -2;
+  bottom: -185px;
+}
+.customer-review .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to left, #00000091, #00000092);
+  backdrop-filter: blur(3px);
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+.review {
+  text-align: justify;
+}
+.review-author {
+  text-align: right;
+}
+
+/* ------- Call to action section -------- */
+.call-to-action {
+  margin: 7rem 0;
+}
+
+.box {
+  background-color: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 8px;
+  padding: 5rem 6rem;
+}
+
+.box a {
+  background-color: #fff;
+  color: var(--secondary-color);
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 3px;
+  text-transform: capitalize;
+  margin-top: 0.5rem;
+  font-family: inherit;
+  font-size: 2.5rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.box h3 {
+  font-size: 4.5rem;
+  color: var(--text-color);
+}
+.box p {
+  font-size: 2.5rem;
+}
+
+/* -------- Footer -------- */
+footer {
+  margin: 2rem 0;
+}
+footer p {
+  text-align: center;
+}
